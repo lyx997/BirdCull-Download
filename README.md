@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/birdcull_ui.png" alt="BirdCull 软件界面" width="960">
+  <img src="assets/屏幕截图(3).png" alt="BirdCull 软件界面" width="960">
 </p>
 
 BirdCull 会先帮你完成最费眼睛的第一轮筛选，把同一组连拍里更值得保留的照片优先整理出来，让你更快进入精修和交付。

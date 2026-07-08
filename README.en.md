@@ -14,7 +14,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/birdcull_ui.png" alt="BirdCull interface" width="960">
+  <img src="assets/屏幕截图(4).png" alt="BirdCull interface" width="960">
 </p>
 
 BirdCull helps you finish the most time-consuming first pass of bird photo selection. It surfaces the stronger shots from each burst so you can move faster into review, editing, and delivery.

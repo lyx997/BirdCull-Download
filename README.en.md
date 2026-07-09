@@ -29,7 +29,7 @@ Current builds are for `Windows 10 / Windows 11`.
 ## What BirdCull does
 
 - Analyzes bird head, eye, sharpness, pose, and within-burst differences
-- Organizes results into `Top`, `Review`, and `Rejected`
+- Organizes results into `Top`, `Candidate`, `Review`, and `Rejected`
 - Uses hard links for output instead of copying your original photos
 - Supports both Chinese and English UI
 - Lets you activate the full version from inside the app
@@ -63,7 +63,7 @@ If your photo folder is on a filesystem that does not support hard links, BirdCu
 2. Choose your photo folder
 3. Set the date range you want to process
 4. Click `Start`
-5. Open the output results and review `Top`, `Review`, and `Rejected`
+5. Open the output results and review `Top`, `Candidate`, `Review`, and `Rejected`
 
 ## Output behavior
 
@@ -111,7 +111,7 @@ Yes. The app starts in the free edition, so you can try the main workflow right 
 
 ### Does it work with Lightroom?
 
-BirdCull is built for the first-pass culling stage. After that, you can continue in your normal post-processing workflow, and the app also includes a shortcut to open Lightroom.
+BirdCull is built for the first-pass culling stage. After that, you can continue in your normal post-processing workflow.
 
 ## Update advice
 

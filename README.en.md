@@ -118,6 +118,16 @@ BirdCull is built for the first-pass culling stage. After that, you can continue
 If you already have an older version installed, it is best to install the latest version over it.  
 If you run into issues, updating to the newest release is also the first thing worth trying.
 
+## Closed-source distribution and third-party components
+
+BirdCull itself is distributed here as proprietary closed-source software.
+
+The current release also bundles or depends on several third-party open-source components. Based on a review of the current core packaged dependencies, we did not identify a core bundled dependency that would, by itself, require BirdCull application source code to be published solely because BirdCull is distributed in binary form.
+
+BirdCull's proprietary license notice is available here: [License Notice](LICENSE.en.md).
+
+Third-party components still remain under their own licenses and notice requirements. See [Third-Party Notices](THIRD_PARTY_NOTICES.en.md).
+
 ## Contact
 
 For full-version licensing, feedback, or collaboration:

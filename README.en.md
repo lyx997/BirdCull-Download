@@ -133,7 +133,7 @@ Third-party components still remain under their own licenses and notice requirem
 For full-version licensing, feedback, or collaboration:
 
 - Email: `glamecke@gmail.com`
-- Xiaohongshu: `热爱观鸟的Salamence`
+- Xiaohongshu account name: `热爱观鸟的Salamence`
 
 ## Notes
 

@@ -15,9 +15,23 @@ Both files are part of the same installer set and should be distributed together
 - Hard-link based output to avoid duplicating original photos
 - Chinese and English interface support
 
+## GPU Compatibility
+
+`v1.0.1` is the legacy compatibility build for older NVIDIA GTX cards that may not be covered by `v1.0.2`.
+
+Use `v1.0.1` first if you need GPU acceleration on cards such as:
+
+- `GTX 1050 / 1050 Ti`
+- `GTX 1060`
+- `GTX 1070`
+- `GTX 1080`
+- Many `GTX 900` series cards
+
+If you use `RTX 20/30/40/50` or `GTX 16` series, prefer `v1.0.2`.
+
 ## System
 
 - Windows 10 / Windows 11
 - NTFS recommended
-- NVIDIA RTX series GPU recommended
+- NVIDIA GTX / RTX GPU recommended depending on release version
 - 16 GB RAM or more recommended

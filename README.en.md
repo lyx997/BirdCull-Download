@@ -85,6 +85,7 @@ If your photo folder is on a filesystem that does not support hard links, BirdCu
 BirdCull does not duplicate your original photos into rating folders. By default, it creates grouped hard-link outputs:
 
 - `Top`: keep first
+- `Candidate`: strong backup picks worth a second look
 - `Review`: check again
 - `Rejected`: remove first
 

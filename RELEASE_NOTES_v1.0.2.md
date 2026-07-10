@@ -3,9 +3,9 @@
 ## Downloads
 
 - `BirdCull_Setup_win10_win11_v1.0.2.exe`
-- `BirdCull_Setup_win10_win11_v1.0.2-1.bin`
+- `BirdCull_Setup_win10_win11_v1.0.2-*.bin`
 
-Both files are part of the same installer set and must be downloaded together.
+All `v1.0.2` files are part of the same installer set and must be downloaded together into the same folder.
 
 ## What Changed
 

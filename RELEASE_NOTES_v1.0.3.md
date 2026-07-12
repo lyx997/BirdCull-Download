@@ -44,4 +44,6 @@ Use `v1.0.1` if you need GPU acceleration on older GTX cards such as:
 - NTFS recommended for output hard links
 - 16 GB RAM or more recommended
 - Recent NVIDIA driver recommended for RTX 40 / RTX 50 series GPUs
+- AMD GPU users do not need CUDA; use a recent AMD graphics driver and a DirectML-capable Windows system
+- If DirectML GPU acceleration is not available, BirdCull can use the ONNX CPU path instead
 - Higher VRAM and system memory are recommended for the `v1.0.3` speed optimizations

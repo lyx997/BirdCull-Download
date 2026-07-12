@@ -10,19 +10,24 @@ All `v1.0.3` files are part of the same installer set and must be downloaded tog
 
 ## What Changed
 
-- Optimized the processing pipeline for high-performance workstations, especially machines with stronger NVIDIA GPUs, more VRAM, and higher system memory.
-- Improved the runtime resource policy so capable machines can spend less time waiting in image preparation, detection, and scoring stages.
-- Added GPU-assisted ROI sharpness preparation for suitable high-performance systems, reducing CPU-side bottlenecks in heavier photo batches.
-- Improved folder scanning progress feedback so large folders show useful progress while images are being collected.
-- Kept the merged Free / Full installer flow: BirdCull still starts in Free Edition and unlocks Full Edition after activation.
+- Improved processing speed for high-performance computers.
+- Better use of stronger NVIDIA GPUs, larger VRAM, and higher system memory during heavy photo batches.
+- Faster image preparation, bird detection, and scoring on suitable machines.
+- Improved progress feedback when scanning large photo folders.
+- Kept the same Free / Full installer flow: install once, start in Free Edition, and unlock Full Edition after activation.
 
-This release focuses on processing-speed improvements for capable machines. It does not change the basic output categories, activation flow, or versioned installer layout.
+This release mainly improves speed and large-batch handling. The output categories, activation flow, and installer structure are unchanged.
 
-## Which Version Should I Use?
+## Newly Supported / Recommended Users
 
-Use `v1.0.3` if you have a high-performance NVIDIA system and want the newest processing-speed optimizations.
+`v1.0.3` is recommended for users with:
 
-Use `v1.0.2` if you mainly need the RTX 50 / newer CUDA compatibility package and do not need the latest speed-tuning changes.
+- High-performance NVIDIA workstations
+- RTX 40 / RTX 50 series GPUs
+- Larger VRAM and 24 GB or more system memory
+- Large photo batches where processing speed matters
+
+Use `v1.0.2` if you mainly need the newer CUDA / RTX 50 compatibility package and do not need the latest speed optimizations.
 
 Use `v1.0.1` if you need GPU acceleration on older GTX cards such as:
 
@@ -36,4 +41,3 @@ Use `v1.0.1` if you need GPU acceleration on older GTX cards such as:
 - 16 GB RAM or more recommended
 - Recent NVIDIA driver recommended for RTX 40 / RTX 50 series GPUs
 - Higher VRAM and system memory are recommended for the `v1.0.3` speed optimizations
-

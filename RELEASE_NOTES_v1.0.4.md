@@ -25,7 +25,18 @@ This release focuses on making the packaged macOS application produce the same c
 3. Wait for copying to finish, then eject the `BirdCull 1.0.4` disk image.
 4. Open BirdCull from the macOS `Applications` folder. You do not need to keep the DMG mounted.
 
-This build is ad-hoc signed but not Apple-notarized. If macOS blocks the first launch, Control-click BirdCull and choose **Open**, or use **System Settings > Privacy & Security > Open Anyway** after confirming that the download came from this repository.
+## First Launch on macOS
+
+This build is ad-hoc signed but not Apple-notarized. macOS may show a warning that Apple cannot verify whether `BirdCull` contains malware, especially when the DMG was downloaded from GitHub.
+
+If macOS blocks the first launch:
+
+1. Drag the app from the DMG to `Applications`.
+2. Do not double-click BirdCull for the first launch.
+3. Hold `Control`, click `BirdCull`, then choose **Open**.
+4. If macOS still blocks it, open **System Settings > Privacy & Security**, then click **Open Anyway** near the bottom.
+
+Only use this workaround after confirming that the download came from this repository.
 
 ## System
 

@@ -32,10 +32,13 @@ Choose the installer that matches your GPU. Do not mix the newer and older CUDA 
 
 | Version | Best For | GPU Acceleration Support |
 | --- | --- | --- |
-| `v1.0.2` | Latest release, recommended for most newer PCs | `NVIDIA RTX 20/30/40/50` series and `GTX 16` series |
+| `v1.0.4` | Latest release, recommended for most newer PCs and Apple silicon Macs | Windows NVIDIA RTX / GTX 16, Windows AMD / CPU ONNX fallback, and macOS Apple silicon |
+| `v1.0.3` | Windows hardware-broader build | `NVIDIA RTX 20/30/40/50`, `GTX 16`, AMD DirectML, and ONNX CPU |
+| `v1.0.2` | Windows CUDA compatibility build | `NVIDIA RTX 20/30/40/50` series and `GTX 16` series |
 | `v1.0.1` | Legacy GPU compatibility build | Some older `GTX` GPUs, including `GTX 900` and `GTX 10` series |
 
-`v1.0.2` upgrades the PyTorch / CUDA runtime to support `RTX 50` series GPUs such as `RTX 5090`.  
+`v1.0.4` is the latest release line and includes both Windows and Apple silicon macOS builds.  
+`v1.0.2` and newer upgrade the PyTorch / CUDA runtime to support `RTX 50` series GPUs such as `RTX 5090`.  
 If you use a `GTX 1050 / 1060 / 1070 / 1080` class `GTX 10` GPU and want GPU acceleration, use `v1.0.1` first.  
 Unsupported GPUs may fall back to CPU mode.
 
@@ -67,6 +70,7 @@ If you need the full edition, open the activation window inside the app, copy th
 - Your photos are stored on a local drive or an external drive
 - The drive supports hard links, ideally `NTFS`
 - Recommended hardware: `NVIDIA RTX` series GPU and `16 GB` RAM or more
+- Use `v1.0.4` for the latest Windows build and the Apple silicon macOS build
 - Use `v1.0.2` or newer for `RTX 50` series GPUs
 - Use the `v1.0.1` compatibility build for `GTX 10` series and some older `GTX` GPUs
 

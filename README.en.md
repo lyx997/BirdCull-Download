@@ -24,23 +24,46 @@ BirdCull helps you finish the most time-consuming first pass of bird photo selec
 - [Download the latest release](../../releases/latest)
 - [Browse all releases](../../releases)
 
-Current builds are for `Windows 10 / Windows 11`.
+## Download And Install
 
-## GPU And Version Choice
+Open the [latest release page](../../releases/latest), then download the files for your system:
 
-Choose the installer that matches your GPU. Do not mix the newer and older CUDA runtime builds:
-
-| Version | Best For | GPU Acceleration Support |
+| System | What To Download | How To Install |
 | --- | --- | --- |
-| `v1.0.4` | Latest release, recommended for most newer PCs and Apple silicon Macs | Windows NVIDIA RTX / GTX 16, Windows AMD / CPU ONNX fallback, and macOS Apple silicon |
-| `v1.0.3` | Windows hardware-broader build | `NVIDIA RTX 20/30/40/50`, `GTX 16`, AMD DirectML, and ONNX CPU |
-| `v1.0.2` | Windows CUDA compatibility build | `NVIDIA RTX 20/30/40/50` series and `GTX 16` series |
-| `v1.0.1` | Legacy GPU compatibility build | Some older `GTX` GPUs, including `GTX 900` and `GTX 10` series |
+| `Windows 10 / Windows 11` | Download `BirdCull_Setup_win10_win11.exe` and every `BirdCull_Setup_win10_win11-*.bin` file from the same release | Put the `.exe` and all `.bin` files in the same folder, then run the `.exe` installer |
+| Apple silicon Mac | Download `BirdCull_macOS_v1.0.4.dmg` | Open the `.dmg`, then drag `BirdCull.app` to `Applications` |
+
+The Windows download is an installer set: the `.exe` starts the installer, and the `.bin` files contain the payload. They must stay together in the same folder.  
+If the release only shows Windows files, use the Windows build. If it shows a macOS DMG, make sure your Mac is an Apple silicon model.
+
+## Device, System, And Version Choice
+
+Choose the installer that matches your system and GPU. Do not mix the newer and older CUDA runtime builds:
+
+| Version | Supported Systems | Recommended Devices / GPUs | Notes |
+| --- | --- | --- | --- |
+| `v1.0.4` | `Windows 10 / Windows 11`; Apple silicon macOS | Newer Windows PCs, `NVIDIA RTX 20/30/40/50`, `GTX 16`, AMD/CPU fallback; Apple silicon Macs | Latest release, recommended first |
+| `v1.0.3` | `Windows 10 / Windows 11` | `NVIDIA RTX 20/30/40/50`, `GTX 16`, AMD DirectML, ONNX CPU | Broad Windows hardware support |
+| `v1.0.2` | `Windows 10 / Windows 11` | `NVIDIA RTX 20/30/40/50`, `GTX 16` | CUDA compatibility build with `RTX 50` support |
+| `v1.0.1` | `Windows 10 / Windows 11` | Some older `GTX` GPUs, including `GTX 900` and `GTX 10` series | Legacy GPU compatibility build |
 
 `v1.0.4` is the latest release line and includes both Windows and Apple silicon macOS builds.  
 `v1.0.2` and newer upgrade the PyTorch / CUDA runtime to support `RTX 50` series GPUs such as `RTX 5090`.  
-If you use a `GTX 1050 / 1060 / 1070 / 1080` class `GTX 10` GPU and want GPU acceleration, use `v1.0.1` first.  
-Unsupported GPUs may fall back to CPU mode.
+If you use a `GTX 1050 / 1060 / 1070 / 1080` class `GTX 10` GPU and want GPU acceleration, download `v1.0.1` first.  
+If your GPU is outside the supported range, BirdCull may still run through CPU or ONNX fallback, but processing will be slower.
+
+## Version Updates
+
+The latest release is `v1.0.4`:
+
+- Added the Apple silicon macOS build
+- Added the current Windows `v1.0.4` installer set
+- Shows `v1.0.4` next to the BirdCull title in the app
+- Fixed a UI state issue where background model warm-up could still appear after processing had already started
+- Filters visible and legacy output folders so reruns do not process previous output results again
+- Refreshed Windows and macOS packaged dependencies to reduce release-environment drift
+
+See [v1.0.4 release notes](RELEASE_NOTES_v1.0.4.md) for the full changelog.
 
 ## What BirdCull does
 
@@ -52,7 +75,7 @@ Unsupported GPUs may fall back to CPU mode.
 
 ## Editions
 
-BirdCull now uses a single installer:
+BirdCull now uses a single installer. There are no separate Free and Full installers:
 
 - You can start with the free edition right after installation
 - The free edition is meant to let you experience the core workflow
